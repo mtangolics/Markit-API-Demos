@@ -1,0 +1,89 @@
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  padding: 0 10px 0 10px;
+}
+
+.pos {
+  color: #006633;
+}
+
+.neg {
+  color: #9c1c1b;
+}
+
+.symbolSearchContainer, .symbolSearchContainer input {
+  font-size: 16px;
+  line-height: 16px;
+}
+.symbolSearchContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.symbolSearchContainer .symbolInputContainer {
+
+}
+
+.symbolSearchContainer button {
+  font-size: 16px;
+}
+
+.quoteRibbonContainer h3 {
+
+}
+
+.quoteRibbonContainer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quoteRibbonContainer li {
+  display: inline-block;
+  margin: 0 25px 0 0;
+}
+
+#symbolInput {
+  margin-right: 5px;
+}
+
+#symbolDropdown {
+  z-index: 500;
+  top: 47px;
+  left: 10px;
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+#chartContainer {
+  margin-top: 20px;
+}
+
+#dropdownList {
+  list-style:none;
+  margin: 0;
+  padding: 0 0 0 62px;
+  width: 300px;
+}
+
+#dropdownList li {
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  background-color: #eee;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-top: 1px solid #ccc;
+}
+
+#dropdownList li:hover {
+  border: 1px solid #000;
+}
+
+#dropdownList li .exchange {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
