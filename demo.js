@@ -150,8 +150,10 @@ var SymbolSearch = React.createClass({
   loadResults: function() {
     var curVal = $('#symbolInput').val();
     if(curVal && curVal.length > 0 && curVal != this.lastSent) {
-
-      $.ajax({
+      if(this.ajaxCall) {
+        this.ajaxCall.abort();
+      }
+      this.ajaxCall = $.ajax({
         url: this.props.api + curVal,
         dataType: 'jsonp',
         cache: false,
